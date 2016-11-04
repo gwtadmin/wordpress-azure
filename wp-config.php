@@ -18,39 +18,21 @@
  * @package WordPress
  */
 
-//Using environment variables for DB connection information
-
-$connectstr_dbhost = '';
-$connectstr_dbname = '';
-$connectstr_dbusername = '';
-$connectstr_dbpassword = '';
-
-foreach ($_SERVER as $key => $value) {
-    if (strpos($key, "MYSQLCONNSTR_") !== 0) {
-        continue;
-    }
-    
-    $connectstr_dbhost = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
-    $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
-}
-
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', $connectstr_dbname);
+define('DB_NAME', 'jeff');
 
 /** MySQL database username */
-define('DB_USER', $connectstr_dbusername);
+define('DB_USER', 'phplead5');
 
 /** MySQL database password */
-define('DB_PASSWORD', $connectstr_dbpassword);
+define('DB_PASSWORD', 'lead5');
 
 /** MySQL hostname */
-define('DB_HOST', $connectstr_dbhost);
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -64,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         '>UX$f_K9[6@p|><0]dkR|rI/`5}xH  }b.(O8+yX}ViBgp@>C-ik`T(<0.[j=eFZ');
+define('SECURE_AUTH_KEY',  'R5~5LHjp731X$}HEOA1#{$@uCW7M;{,c5B9=KiX2Woi5OPpRtiW=Tfw&.7_<z:<{');
+define('LOGGED_IN_KEY',    'lq~??g?mrFzck%>5*UhH%7!P58cf}znTTY=u#mrDqD((P;QCCEQ!+HQ5#UPtn^,#');
+define('NONCE_KEY',        '.|f}dmaRoG<Ib*FxFUN`MCK,kDDIaZxy=kA;r@j7PMfJK7@aa6bUyD+7sPhFJ]dL');
+define('AUTH_SALT',        'WXld5DX<{8kev@ydNF`_/gwe@IF#jgEf4_f]]Ri*}C3E7aF@QxJ<k:NFi}KEPJoW');
+define('SECURE_AUTH_SALT', '|/zPpS}ae+&xW{j}(~)(ET=><)bm4*Tql2naXtyvir9--Gzu|}_X[]O#%-Nrt7M!');
+define('LOGGED_IN_SALT',   '@9N;s1qCRfM|J nB)^`V&SajY9;R1R]w|z5_3  t;w][+fs|1p4Tt`5ZoB:u~3W[');
+define('NONCE_SALT',       'hhVNc,bMIcM&t4}c bW-hZQ{Od0S(eh8q@0gN=p(Nxuz5gk^g*wmd0`AhA1(m9qU');
 
 /**#@-*/
 
@@ -98,13 +80,6 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
-
-//Relative URLs for swapping across app service deployment slots 
-define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
-define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
-define('WP_CONTENT_URL', '/wp-content');
-define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
-
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )

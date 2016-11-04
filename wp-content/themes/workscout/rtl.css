@@ -1,0 +1,30 @@
+/*
+Theme Name: WorkScout
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+#navigation .float-right {  left : 10px;   position: absolute;}
+ul.float-right li a { background-color: #f0f0f0; color: #333; }
+
+#alternative #navigation .float-right {    left: 10px;    float: right;    position: absolute; }
+
+.search-container button { float: left;}
+
+.search-container .chosen-container, .search-container select, .search-container input { margin-right: 0px; margin-bottom:10px;}
+
+.showbiz-navigation {   float: left; }
+
+li .job-spotlight {  margin-left: 20px; }
+.sb-navigation-left, .sb-navigation-right {  cursor: pointer;   float: left; }
+#titlebar .two-buttons .button { position: static; margin-top:40px; }

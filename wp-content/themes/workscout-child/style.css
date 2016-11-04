@@ -1,0 +1,85 @@
+/*
+Theme Name:   WorkScout Child
+Theme URI: http://workscout.in
+Author: Purethemes
+Author URI: http://themeforest.net/user/purethemes
+Description: WordPress Job Theme
+Version: 1.0
+License: ThemeForest
+License URI: http://themeforest.net/licenses
+Text Domain: workscout
+Domain Path: /languages/
+Tags: light, responsive-layout, post-formats, theme-options, translation-ready, two-columns
+Template:  workscout
+*/
+/*body{ font-family: 'Open Sans', sans-serif !important; font-size:14px;}*/
+.vc_color-success.vc_message_box {
+	min-height:170px;
+}
+.bookmark_selected {
+    position: relative;
+    z-index: 1000;
+}
+
+.page-id-3031 .wpb_wrapper p , li{
+	color: #000;
+	font-weight: 500;
+}
+
+.logged-in input[name=application] , .logged-in input[name=candidate_email] {
+    pointer-events: none;
+}
+
+.job_filters_link2 {
+    background: #f2f2f2 none repeat scroll 0 0;
+    color: #808080;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 7px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.job_filters_link2:hover{
+background-color: #ebebeb;
+}
+
+a.remove-bookmark.button.dark {
+    width: 180px;
+}
+a.add-bookmark.button{
+	width: 180px;
+}
+
+
+
+#navigation.menu ul li {
+    margin-left: 5px;
+}
+#navigation.menu ul li a{
+    padding:10px;
+	font-weight:400;
+}
+.job_listings .bookmark_selected a{color:#fff;} 
+#submit-job-form .fieldset-job_type label{text-transform:capitalize;}
+
+#logo img {
+    margin-top: 0px; 
+}
+
+#logo {
+    margin-top: 0px;
+}
+
+.job-overview a.button {
+    margin-top: 3px;
+}
+/* .admin-bar header#main-header{top:32px;} */
+header#main-header {background-color: #fff;height: auto;position:fixed; width: 100%;  z-index: 999999; top:0px; left:0px;}
+#wrapper { margin:102px 0 0;}
+header#main-header.sticky{top:0%; width: 100%; height:auto; position:fixed; padding:0px;}
+.admin-bar header#main-header {top: 32px;}
+
+.job-list-content .listing-desc {
+    display: none;
+}
