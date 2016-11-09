@@ -26,7 +26,7 @@ define('DB_NAME', 'jeff');
 define('DB_USER', 'jeff');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'lead5');
+define('DB_PASSWORD', 'gwt2site1!');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
