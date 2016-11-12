@@ -23,10 +23,10 @@
 define('DB_NAME', 'jeff');
 
 /** MySQL database username */
-define('DB_USER', 'jeff');
+define('DB_USER', 'b0b5ecff8a7649');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'gwt2website1!');
+define('DB_PASSWORD', 'e07e943c');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
