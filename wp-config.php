@@ -24,6 +24,16 @@ define('DB_NAME', 'acsm_65bc0e088bccb40');
 
 /** MySQL database username */
 define('DB_USER', 'b0b5ecff8a7649');
+//Enable WP_DEBUG mode
+define('WP_DEBUG', true);
+
+//Enable Debug Logging to /wp-content/debug.log
+define('WP_DEBUG_LOG', true);
+
+//Supress errors and warnings to screen
+define('WP_DEBUG_DISPLAY', false);
+//Supress PHP errors to screen
+ini_set('display_errors', 0);
 
 /** MySQL database password */
 define('DB_PASSWORD', 'e07e943c');
@@ -87,3 +97,13 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+//Enable WP_DEBUG mode
+define('WP_DEBUG', true);
+
+//Enable Debug Logging to /wp-content/debug.log
+define('WP_DEBUG_LOG', true);
+
+//Supress errors and warnings to screen
+define('WP_DEBUG_DISPLAY', false);
+//Supress PHP errors to screen
+ini_set('display_errors', 0);
